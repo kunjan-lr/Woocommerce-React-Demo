@@ -5,9 +5,9 @@ import NumericInput from 'react-numeric-input';
 import { Link } from "react-router-dom";
 
 const api = new WooCommerceRestApi({
-  url: "http://157.245.96.72/testproject",
-  consumerKey: "ck_853ec9ed13fb578d5ba64aeef8922ca1f352e7ed",
-  consumerSecret: "cs_21d7839e1246b53736045b182b5c30ae2f2ce268",
+  url: "testproject", /*Add your api url and key*/
+  consumerKey: "",
+  consumerSecret: "",
   version: "wc/v3",
 });
 

@@ -6,7 +6,7 @@ function Faqs() {
   const [page, setpage] = useState(1)
 
   const fetchPosts=()=>{
-    fetch(`https://www.logicrays.com/blog/wp-json/wp/v2/posts?per_page=10&page=${page}`)
+    fetch(`/wp-json/wp/v2/posts?per_page=10&page=${page}`)
     .then(res=>{
       //setPageCount(res.headers.get('X-WP-TotalPages'))
       return(

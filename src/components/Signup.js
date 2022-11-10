@@ -19,7 +19,7 @@ function Signup() {
     };
 
     fetch(
-      "http://157.245.96.72/testproject/wp-json/jwt-auth/v1/token",
+      "/wp-json/jwt-auth/v1/token",
       requestData
     )
       .then((response) => response.json())
@@ -33,7 +33,7 @@ function Signup() {
       body: JSON.stringify(userinfo),
     };
     fetch(
-      "http://157.245.96.72/testproject/wp-json/wp/v2/users/register",
+      "/wp-json/wp/v2/users/register",
       requestOptions
     )
       .then((response) => response.json())

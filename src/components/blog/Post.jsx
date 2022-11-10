@@ -7,7 +7,7 @@ function Post() {
 
   useEffect(() => {
     // Fetch post using the postSlug
-    fetch(`https://www.logicrays.com/blog/wp-json/wp/v2/posts/${postSlug}`)
+    fetch(`/blog/wp-json/wp/v2/posts/${postSlug}`)
     .then((res) => res.json())
     .then((data) => setData(data));
   }, [postSlug]);
